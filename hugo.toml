@@ -13,6 +13,9 @@ disablePathToLower = true
 # Required if you want to render robots.txt template
 enableRobotsTXT = true
 
+# Provides access to git commit metadata
+enableGitInfo = true
+
 # Needed for mermaid shortcodes
 [markup]
   [markup.goldmark.renderer]
