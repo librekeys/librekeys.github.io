@@ -13,7 +13,7 @@ geekdocAnchor: false
 
 The LibreKeys project is developping a cross‑platform configuration application that lets users manage security key devices, credentials, policies, and firmware updates through a clear graphical interface. The goal of the app is to expose advanced features (such as multiple profiles, PIN and touch policies, backup/restore flows, and diagnostics) without sacrificing simplicity, so both newcomers and experts can safely operate their security devices.
 
-LibreKeys is also maintaining community‑driven and fully FOSS forks of the PicoKeys firmware families, unifying them into a coherent, fully open source suite for hardware security keys. We aim to modernize and extend the HSM, FIDO2, and OpenPGP capabilities, while keeping the codebase auditable, modular, and easy to adapt to new microcontrollers and use cases.
+LibreKeys is also maintaining community‑driven and fully FOSS forks of the PicoKeys firmwares, unifying them into a coherent, fully open source suite for hardware security keys. We aim to modernize and extend the HSM, FIDO2, and OpenPGP capabilities, while keeping the codebase auditable, modular, and easy to adapt to new microcontrollers and use cases.
 
 The entire effort is run in a transparent, community‑oriented way: open governance (design discussions in public), contributor‑friendly documentation, and automated testing and reproducible builds to strengthen trust. Over time, the project could define open standards for interoperability between different devices and toolchains, becoming a reference platform for hobbyists, researchers, and organizations that want vendor‑neutral, privacy‑respecting security keys.
 
