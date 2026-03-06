@@ -13,7 +13,7 @@ When this happens, using the picoforge application shows a status of `Online - F
 
 ## 1. Description of the issue
 
-{{< hint type=important title=ToDo >}}
+{{< hint type=important title=TODO >}}
 **Update VID:PID**\
 Update to replace generic VID:PID by the VID:PID provided by OpenMoko
 {{< /hint >}}
