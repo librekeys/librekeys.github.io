@@ -28,23 +28,20 @@ Refer to the [Building](../building/) section if you would rather compile the ap
     Get-Service SCardSvr | Start-Service
     ```
 
-> [!IMPORTANT]
-> Please run the application as **Administrator**. This is often required for the application to correctly detect and interact with the hardware device.
+{{< hint type=important >}}
+Please run the application as **Administrator**. This is often required for the application to correctly detect and interact with the hardware device on Windows.
+{{< /hint >}}
 
 ## macOS
-
-> [!WARNING]
-> The macOS version of this application is tested rarely, while it does work fine, it might have some bugs that I have not experienced, feel free to report it on issues.
-> 
-> If you are a developer or user who can assist with testing and debugging on macOS, contributions are highly appreciated. Please check the Issues tab or join our Discord server.
 
 #### Setup Instructions:
 
 - Download the application from the [Latest Releases](https://github.com/librekeys/picoforge/releases/latest).
 - No additional driver setup is usually required as the PC/SC framework is built into macOS.
   
-> [!IMPORTANT]
-> Note on Security: Picoforge images are currently unsigned. You will need to manually authorize the application to run.
+{{< hint type=important >}}
+**Note on Security:** Picoforge images are currently unsigned. You will need to manually authorize the application to run.
+{{< /hint >}}
 
 1. Download the App: Get the latest version from the Releases Page.
 
@@ -122,8 +119,9 @@ sudo dnf copr enable lockedmutex/picoforge
 sudo dnf install picoforge
 ```
 
-> [!NOTE]
-> For EPEL 8, use `yum` instead of `dnf` if `dnf` is not available.
+{{< hint type=note >}}
+For EPEL 8, use `yum` instead of `dnf` if `dnf` is not available.
+{{< /hint >}}
 
 **Troubleshooting**: Ensure the EPEL repository is enabled on your system.
 
@@ -205,8 +203,9 @@ AppImage is the recommended way to run PicoForge on unsupported distributions. T
     ./picoforge_*.AppImage
     ```
 
-> [!NOTE]
-> If the AppImage does not start, check if you are missing FUSE (Filesystem in Userspace), which is required for AppImages on some newer distributions like Ubuntu 22.04+.
+{{< hint type=note >}}
+If the AppImage does not start, check if you are missing FUSE (Filesystem in Userspace), which is required for AppImages on some newer distributions like Ubuntu 22.04+.
+{{< /hint >}}
 
 ##### Managing AppImages with Gear Lever
 
