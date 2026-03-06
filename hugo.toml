@@ -1,4 +1,4 @@
-baseURL = 'https://librekeys.github.io/'
+baseURL = 'https://docs.librekeys.org/'
 languageCode = 'en-us'
 title = 'LibreKeys Docs'
 theme = 'hugo-geekdoc'
