@@ -4,6 +4,12 @@ weight: -20
 # cspell:ignore demosite testlink gohugoio
 ---
 
+{{< hint type=important title=ToDo >}}
+**Write actual content for this page**\
+This page is currently only a placeholder with lorem ipsum gibberish. Actual content needs to be written.
+If you want to help with this documentation read the Contributing section
+{{< /hint >}}
+
 This page tells you how to get started with LibreKeys
 
 <!--more-->
