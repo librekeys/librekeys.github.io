@@ -18,7 +18,7 @@ LibreKeys is also maintaining community‑driven and fully FOSS forks of the Pic
 The entire effort is run in a transparent, community‑oriented way: open governance (design discussions in public), contributor‑friendly documentation, and automated testing and reproducible builds to strengthen trust. Over time, the project could define open standards for interoperability between different devices and toolchains, becoming a reference platform for hobbyists, researchers, and organizations that want vendor‑neutral, privacy‑respecting security keys.
 
 
-{{< button size="large" relref="usage/getting-started/" >}}Getting Started{{< /button >}}
+{{< button size="large" relref="project/getting-started/" >}}Getting Started{{< /button >}}
 
 ## Feature overview
 

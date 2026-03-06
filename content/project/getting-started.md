@@ -4,7 +4,7 @@ weight: -20
 # cspell:ignore demosite testlink gohugoio
 ---
 
-{{< hint type=important title=ToDo >}}
+{{< hint type=important title=TODO >}}
 **Write actual content for this page**\
 This page is currently only a placeholder with lorem ipsum gibberish. Actual content needs to be written.
 If you want to help with this documentation read the Contributing section
