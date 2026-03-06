@@ -3,25 +3,52 @@ title: PicoForge
 weight: -20
 ---
 
-{{< hint type=important title=ToDo >}}
-**Write actual content for this page**\
-This page is currently only a placeholder with lorem ipsum gibberish. Actual content needs to be written.
-If you want to help with this documentation refer to the contributing section
-{{< /hint >}}
-
-
-This section contains picoforge specific documentation
-
 <!--more-->
 
 {{< toc >}}
 
-Nulla vehicula urna ullamcorper, eleifend nulla ac, rutrum ipsum. Nunc nec hendrerit est, eu rhoncus diam. Nam vehicula, leo et suscipit semper, nisi elit dictum risus, eget mattis diam leo vitae massa. Praesent sapien risus, porttitor vel tristique fa>
+**PicoForge** is a modern desktop application for configuring and managing **Pico FIDO** security keys. Built with Rust, Tauri, and Svelte, it provides an intuitive interface.
 
-Aenean turpis tellus, pretium at turpis in, cursus tristique leo. Nam semper tortor mi, vitae tristique sapien dignissim ac. Maecenas blandit augue vel diam cursus, nec auctor lectus euismod. Duis vehicula eget nisi sed porta. Praesent euismod, sem ac >
+> [!WARNING]
+> **Beta Status**: This application is currently under active development and in beta stage. Users should expect bugs and are encouraged to report them. The app has been tested on Linux and Windows 10/11 with the official Raspberry Pi Pico2, WaveShare RP2350 One & ESP32-S3 and, currently supports Pico FIDO firmware version 7.2 only.
+>
+> It does not support all the features exposed by the `pico-fido` firmware and `pico-hsm`.
 
-Quisque vitae massa sollicitudin, lobortis lacus ut, aliquam neque. Morbi commodo eget turpis id semper. Aenean vel quam dapibus, rutrum felis quis, aliquam est. Curabitur ultricies, orci sed egestas facilisis, lacus sapien tempor sapien, sit amet elei>
+## Features
 
-Duis cursus, nulla non molestie aliquam, ante augue consectetur ligula, non mollis nibh urna in augue. Donec quis ante quis dolor suscipit laoreet. Cras at mattis ipsum, in pulvinar arcu. Maecenas sed facilisis lectus. Praesent vel enim velit. Quisque >
+- **Device Configuration** - Customize USB identifiers, LED behavior, and hardware settings
+- **Security Management** - Enable secure boot and firmware verification (experimental and WIP)
+- **Real-time Monitoring** - View flash usage, connection status, and system logs
+- **Modern UI** - Clean, responsive interface built with Svelte and shadcn-svelte
+- **Multi-Vendor Support** - Compatible with multiple hardware variants
+- **Cross-Platform** - Works on Windows, macOS, and Linux
+- **Detailed Capabilities**:
+    - Reading device information and firmware details
+    - Configuring USB VID/PID and product names
+    - Adjusting LED settings (GPIO, brightness, driver)
+    - Managing security features (secure boot, firmware locking) (WIP)
+    - Real-time system logging and diagnostics
+    - Support for multiple hardware variants and vendors
 
-Sed molestie purus sit amet dolor porta consequat. Integer rhoncus tincidunt ipsum id tristique. Vivamus vitae diam sit amet metus interdum lacinia ut a tellus. Donec sed lobortis felis. Vivamus vitae condimentum metus. Mauris maximus purus lorem, id s>
+## Usage
+
+1. Connect your smart card reader
+2. Insert your Pico FIDO device
+3. Launch PicoForge
+4. Click **Refresh** button at top right corner to detect your key
+5. Navigate through the sidebar to configure settings:
+   - **Home** - Device overview and quick actions
+   - **PassKeys** - Passkey management
+   - **Configuration** - USB settings, LED options
+   - **Security** - Secure boot management (experimental)
+   - **Logs** - Real-time event monitoring
+   - **About** - Application information
+
+## Disclaimer
+
+> [!CAUTION]
+> **USB VID/PID Notice**: The vendor presets provided in this software include USB Vendor IDs (VID) and Product IDs (PID) that are the intellectual property of their respective owners. These identifiers are included for testing and educational purposes only. You are NOT authorized to distribute or commercially market devices using VID/PID combinations you do not own or license. Commercial distribution requires obtaining your own VID from the USB Implementers Forum ([usb.org](https://www.usb.org/getting-vendor-id)) and complying with all applicable trademark and certification requirements. Unauthorized use may violate USB-IF policies and intellectual property laws. The PicoForge developers assume no liability for misuse of USB identifiers.
+
+
+## Source code
+You can find the PicoForge source code in the [LibreKeys PicoForge Repository](https://github.com/librekeys/picoforge)
