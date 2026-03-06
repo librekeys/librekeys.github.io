@@ -3,14 +3,14 @@ title: Project
 weight: -50
 ---
 
-{{< hint type=important title=ToDo >}}
+{{< hint type=important title=TODO >}}
 **Write actual content for this page**\
 This page is currently only a placeholder with lorem ipsum gibberish. Actual content needs to be written.
-If you want to help with this documentation refer to the contributing section
+If you want to help with this documentation refer to the contributing section.
 {{< /hint >}}
 
 
-This section contains LibreKeys project general documentaiton : organisation, getting started, contribution guidelines, ...
+This section contains LibreKeys project general documentation : organisation, getting started, contribution guidelines, ...
 
 <!--more-->
 
