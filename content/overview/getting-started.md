@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-weight: -20
+weight: -30
 # cspell:ignore demosite testlink gohugoio
 ---
 

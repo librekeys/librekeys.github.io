@@ -1,6 +1,6 @@
 ---
 title: Troubleshooting / FAQ
-weight: -30
+weight: -20
 ---
 
 {{< hint type=important title=TODO >}}

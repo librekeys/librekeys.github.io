@@ -1,6 +1,6 @@
 ---
 title: Firmwares
-weight: -10
+weight: -30
 ---
 
 {{< hint type=important title=TODO >}}

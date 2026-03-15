@@ -2,7 +2,7 @@
 title: Installation
 ---
 
-This document will help you set up the PicoForge application on your operating system using pre-built binaries.  
+This document will help you set up the PicoForge application on your operating system using prebuilt binaries.  
 Refer to the [Building](../building/) section if you would rather compile the application from its source code yourself.
 
 <!--more-->
@@ -45,7 +45,7 @@ Please run the application as **Administrator**. This is required for the applic
 
 1. Download the App: Get the latest version from the Releases Page.
 
-  + Apple Silicon (M1/M2/M3): Download the arm64 version for native performance.
+  + Apple Silicon (M1/M2/M3): Download the ARM64 version for native performance.
   + Intel Macs: Download the x64 version.
 
 2. Authorization (Apple Silicon): Since the app is unsigned, choose one of the following methods to get it running on Apple Silicon:
@@ -61,9 +61,9 @@ If you prefer a GUI approach, you can run the Intel version via translation.
 
 #### Option B: The "Terminal" Path (Recommended for Performance)
 
-Use this to run the native arm64 version by stripping the "quarantine" flag.
+Use this to run the native ARM64 version by stripping the "quarantine" flag.
 
-+ Download and extract the arm64 zip file to find picoforge.app.
++ Download and extract the ARM64 zip file to find picoforge.app.
 + Open your Terminal and navigate to the folder containing the app.
 + Run the following command to clear the extended attributes:
  
