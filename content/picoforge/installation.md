@@ -12,15 +12,15 @@ Refer to the [Building](../building/) section if you would rather compile the ap
 
 ## Windows
 
-1.  #### Download the Installer
+1.  **Download the Installer**
 
     Go to the [Latest Releases](https://github.com/librekeys/picoforge/releases/latest) page and download the `picoforge_[version]_[arch]-setup.exe` file.
 
-2.  #### Run the Installer
+2.  **Run the Installer**
 
     Locate the downloaded file and run it to install the application.
 
-3.  #### Verify Smart Card Service
+3.  **Verify Smart Card Service**
 
     For the application to communicate with your device, the Windows Smart Card service must be running. You can ensure this by running the following command in PowerShell:
 
@@ -29,7 +29,7 @@ Refer to the [Building](../building/) section if you would rather compile the ap
     ```
 
 {{< hint type=important >}}
-Please run the application as **Administrator**. This is often required for the application to correctly detect and interact with the hardware device on Windows.
+Please run the application as **Administrator**. This is required for the application to correctly detect and interact with the picokey on Windows.
 {{< /hint >}}
 
 ## macOS
@@ -75,13 +75,16 @@ xattr -cr picoforge.app
 
 ## Linux
 
-We offer multiple ways to run the application on Linux. Please choose the method for your distribution.
+We offer multiple ways to run the application on Linux. First ensure the prerequisites given below are met
+and then choose the installation method for your distribution.
 
-### Global Prerequisite: Smart Card Daemon
+**Prerequisite:**
 
+{{< hint type=important >}}
 Regardless of the installation method you choose below, your **host operating system** must have the Smart Card Daemon (`pcscd`) installed and running. This service allows the application to talk to the USB device.
+{{< /hint >}}
 
-#### Enable pcscd on your host:
+ ***Enable pcscd on your host:***
 
 ```bash
 # Command may vary by distro, commonly:
@@ -91,6 +94,15 @@ To have the pcscd service, you may need to install pcsc-lite if it is not instal
 - On Debian : `sudo apt install pcscd`
 - On NixOS, add this line in your /etc/nixos/configuration.nix : `services.pcscd.enable = true;`
 
+### Flatpak (Recommended)
+
+The recommended way to install PicoForge on Linux is via Flatpak. Flatpak for the app is updated and released on Flathub, providing timely updates so you do not need to manually check GitHub for the latest version of the application.
+
+[![Get it on Flathub](https://flathub.org/api/badge?locale=en)](https://flathub.org/en-GB/apps/in.suyogtandel.picoforge)
+
+```bash
+flatpak install flathub in.suyogtandel.picoforge
+```
 
 ### Fedora
 
@@ -185,13 +197,11 @@ gstreamer1.0-plugins-base libavif16 libwebp7 libenchant-2-2
 sudo apt install ./picoforge_[version]_amd64.deb
 ```
 
-### Other Distributions
+For distributions that do not have a native package or repository (e.g., Arch Linux), you can use [Flatpak](#flatpak-via-flathub-recommended) or [AppImage](#appimage).
 
-For distributions that do not have a native package or repository (e.g., Arch Linux), you can use AppImage.
+### AppImage
 
-#### AppImage (Recommended)
-
-AppImage is the recommended way to run PicoForge on unsupported distributions. The format is self-contained and runs on almost any Linux distribution.
+AppImage is an alternative way to run PicoForge on unsupported distributions. The format is self-contained and runs on almost any Linux distribution.
 
 1.  Download the `.AppImage` file from the [Latest Releases](https://github.com/librekeys/picoforge/releases/latest).
 2.  Mark the file as executable:
@@ -205,9 +215,11 @@ AppImage is the recommended way to run PicoForge on unsupported distributions. T
 
 {{< hint type=note >}}
 If the AppImage does not start, check if you are missing FUSE (Filesystem in Userspace), which is required for AppImages on some newer distributions like Ubuntu 22.04+.
+
+AppImages currently do not automatically update and do not contain auto-update information. If you use the AppImage, you have to manually download the latest version from the application's GitHub releases page.
 {{< /hint >}}
 
-##### Managing AppImages with Gear Lever
+**Managing AppImages with Gear Lever**
 
 For a better experience, you can use [Gear Lever](https://github.com/mijorus/gearlever) to manage AppImages. It integrates AppImages into your application menu, handles updates, and keeps them organized in a dedicated folder.
 
